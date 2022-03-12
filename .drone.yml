@@ -6,7 +6,9 @@ name: default
 steps:
 - name: authenticate
   image: robertstettner/drone-mvn-auth
-  secrets: [ maven_servers ]
+  settings:
+    servers:
+      from_secret: maven_servers
 
 - name: debug
   image: alpine:latest
