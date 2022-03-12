@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: kubernetes
+name: default
+
+steps:
+- name: authenticate
+  image: robertstettner/drone-mvn-auth
+  secrets: [ maven_servers ]
+
+- name: debug
+  image: alpine:latest
+  commands:
+    - cat .m2/settings.xml
+
