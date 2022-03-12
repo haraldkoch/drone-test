@@ -17,5 +17,5 @@ steps:
     - pwd
     - id
     - echo home is $home
-    - cat ~/.m2/settings.xml
+    - find / -name settings.xml -print
 
