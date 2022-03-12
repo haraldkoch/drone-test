@@ -13,5 +13,7 @@ steps:
 - name: debug
   image: alpine:latest
   commands:
+    - pwd
     - cat .m2/settings.xml
+    - cat ~/.m2/settings.xml
 
