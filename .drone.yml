@@ -14,6 +14,7 @@ steps:
   image: alpine:latest
   commands:
     - pwd
-    - cat .m2/settings.xml
+    - id
+    - echo home is $home
     - cat ~/.m2/settings.xml
 
