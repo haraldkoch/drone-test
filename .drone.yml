@@ -12,7 +12,7 @@ steps:
       from_secret: maven_servers
 
 - name: debug
-  image: ghcr.io/haraldkoch/dnstools:latest
+  image: alpine:3.14
   commands:
     - cat settings.xml
 
