@@ -14,8 +14,5 @@ steps:
 - name: debug
   image: alpine:latest
   commands:
-    - pwd
-    - id
-    - echo home is $home
-    - find / -name settings.xml -print
+    - cat settings.xml
 
